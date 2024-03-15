@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taper Tool Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Nelson Le's Taper Calculator</h1>
+        <div class="calculator">
+            <input type="number" id="userInput" placeholder="Enter Depth">
+            <select id="unitSelect">
+                <option value="mm">mm</option>
+                <option value="in">in</option>
+            </select>
+            <button onclick="calculate()">Calculate</button>
+            <div id="result1">10 deg Taper: </div>
+            <div id="result2">7 deg Taper: </div>
+            <div id="result3">5 deg Taper: </div>
+        </div>
+        <div class="new-taper-calculation">
+            <h2>New Taper Tool Calculator</h2>
+            <input type="number" id="taperInput" placeholder="Enter Taper Deg">
+            <input type="number" id="depthInput" placeholder="Enter Depth">
+            <select id="unitSelectTaper">
+                <option value="mm">mm</option>
+                <option value="in">in</option>
+            </select>
+            <button onclick="calculateTaper()">Calculate Taper</button>
+            <div id="taperResult">Taper Result: </div>
+        </div>
+    </div>
+    
+    <footer>
+        © Nelson Le
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
